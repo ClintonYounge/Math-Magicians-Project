@@ -1,11 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="./assets/logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
   <h3><b>Restaraunt Meal (JS Capstone Group Project)</b></h3>
-
 </div>
 
 # 📗 Table of Contents
@@ -59,7 +55,7 @@
 ### Key Features <a name="key-features"></a>
 
 - Make simple calculations.
-- Read a random math-related quote.
+- Good UI.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -111,7 +107,8 @@ Run the `npx jest` command in your console to run the tests.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
--**[Functionality]**
+-**[Improved User Interface]**
+-**[Random Quote grabbed from API]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

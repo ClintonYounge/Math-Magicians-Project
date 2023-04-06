@@ -32,7 +32,7 @@ code {
     monospace;
 }
 
-main {
+.main {
   width: 80%;
   margin: auto;
   margin-top: 5%;
@@ -44,10 +44,9 @@ main {
   background-color: grey;
   height: 15vh;
   text-align: end;
-}
-
-.show-calculations p {
-  width: 98%;
+  font-size: 2rem;
+  padding-top: 4%;
+  padding-right: 3%;
 }
 
 .input-rows {
@@ -72,14 +71,33 @@ li {
   width: 100%;
   text-align: center;
   border: 1px solid grey;
-  padding-top: 3%;
+  font-size: 2rem;
+  margin: auto;
 }
 
 .orangeBG {
-  background-color: orange;
+  background-color: orange !important;
 }
 
 .R5-li2,
 .R5-li3 {
   width: 50%;
+}
+
+button {
+  border: none;
+  font-size: 1.5rem;
+  background-color: whitesmoke;
+  width: 100%;
+  height: 15vh;
+  cursor: pointer;
+  margin: auto;
+}
+
+button:hover {
+  background-color: rgb(255, 153, 0);
+}
+
+.orangeBG button {
+  background-color: orange;
 }
