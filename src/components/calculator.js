@@ -1,42 +1,52 @@
-import React from 'react';
+import React, { useState } from 'react';
+import '../App.css';
+import Display from './Display';
+import Button from './Button';
+import calculate from '../logic/calculate';
 
-const Calculator = () => (
-  <main>
-    <div className="show-calculations">
-      <p>0</p>
-    </div>
-    <div className="input-rows">
-      <ul className="inputRow-1">
-        <li>AC</li>
-        <li>+/-</li>
-        <li>%</li>
-        <li className="orangeBG">+</li>
-      </ul>
-      <ul className="inputRow-2">
-        <li>7</li>
-        <li>8</li>
-        <li>9</li>
-        <li className="orangeBG">X</li>
-      </ul>
-      <ul className="inputRow-3">
-        <li>4</li>
-        <li>5</li>
-        <li>6</li>
-        <li className="orangeBG">-</li>
-      </ul>
-      <ul className="inputRow-4">
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li className="orangeBG">+</li>
-      </ul>
-      <ul className="inputRow-5">
-        <li className="R5-li1">0</li>
-        <li className="R5-li2">.</li>
-        <li className="orangeBG R5-li3">=</li>
-      </ul>
-    </div>
-  </main>
-);
+function Calculate() {
+  const [state, setState] = useState({ total: null, next: null, operation: null });
 
-export default Calculator;
+  const handleClick = (buttonName) => {
+    setState(calculate(state, buttonName));
+  };
+
+  return (
+    <div className="main">
+      <div className="show-calculations"><Display value={state.next || state.total || '0'} /></div>
+      <div className="input-rows">
+        <ul className="inputRow-1">
+          <li><Button clickHandler={handleClick} name="AC" /></li>
+          <li><Button clickHandler={handleClick} name="+/-" /></li>
+          <li><Button clickHandler={handleClick} name="%" /></li>
+          <li className="orangeBG"><Button clickHandler={handleClick} name="÷" orange /></li>
+        </ul>
+        <ul className="inputRow-2">
+          <li><Button clickHandler={handleClick} name="7" /></li>
+          <li><Button clickHandler={handleClick} name="8" /></li>
+          <li><Button clickHandler={handleClick} name="9" /></li>
+          <li className="orangeBG"><Button clickHandler={handleClick} name="x" /></li>
+        </ul>
+        <ul className="inputRow-3">
+          <li><Button clickHandler={handleClick} name="4" /></li>
+          <li><Button clickHandler={handleClick} name="5" /></li>
+          <li><Button clickHandler={handleClick} name="6" /></li>
+          <li className="orangeBG"><Button clickHandler={handleClick} name="-" /></li>
+        </ul>
+        <ul className="inputRow-4">
+          <li><Button clickHandler={handleClick} name="1" /></li>
+          <li><Button clickHandler={handleClick} name="2" /></li>
+          <li><Button clickHandler={handleClick} name="3" /></li>
+          <li className="orangeBG"><Button clickHandler={handleClick} name="+" /></li>
+        </ul>
+        <ul className="inputRow-5">
+          <li className="R5-li1"><Button clickHandler={handleClick} name="0" wide /></li>
+          <li className="R5-li2"><Button clickHandler={handleClick} name="." /></li>
+          <li className="orangeBG R5-li3"><Button clickHandler={handleClick} name="=" orange /></li>
+        </ul>
+      </div>
+    </div>
+  );
+}
+
+export default Calculate;
