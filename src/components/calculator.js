@@ -3,6 +3,7 @@ import '../App.css';
 import Display from './Display';
 import Button from './Button';
 import calculate from '../logic/calculate';
+import QuoteButton from './QuoteButton';
 
 function Calculate() {
   const [state, setState] = useState({ total: null, next: null, operation: null });
@@ -13,6 +14,7 @@ function Calculate() {
 
   return (
     <div className="main">
+      <div className="quote-section"><QuoteButton /></div>
       <div className="show-calculations"><Display value={state.next || state.total || '0'} /></div>
       <div className="input-rows">
         <ul className="inputRow-1">
