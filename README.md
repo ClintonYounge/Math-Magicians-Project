@@ -55,7 +55,7 @@
 ### Key Features <a name="key-features"></a>
 
 - Make simple calculations.
-- Good UI.
+- Quotes API
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -108,7 +108,6 @@ Run the `npx jest` command in your console to run the tests.
 ## 🔭 Future Features <a name="future-features"></a>
 
 -**[Improved User Interface]**
--**[Random Quote grabbed from API]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

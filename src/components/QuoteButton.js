@@ -12,7 +12,10 @@ function QuoteButton() {
 
   return (
     <div>
-      <button className="show-quote" onClick={handleClick}>Click to see the Quote of the session.</button>
+      <ul className="navBar">
+        <li><button className="home-btn">Home</button></li>
+        <li><button className="show-quote" onClick={handleClick}>Show Quote</button></li>
+      </ul>
       {showQuote && <Quote />}
     </div>
   );

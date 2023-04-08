@@ -35,22 +35,21 @@ code {
 .main {
   width: 80%;
   margin: auto;
-  margin-top: 5%;
 }
 
 .show-calculations {
   margin: auto;
   border: 1px solid white;
   background-color: grey;
-  height: 15vh;
+  height: 10vh;
   text-align: end;
   font-size: 2rem;
-  padding-top: 4%;
+  padding-top: 2%;
   padding-right: 3%;
 }
 
 .input-rows {
-  height: 100%;
+  height: auto;
   background-color: whitesmoke;
 }
 
@@ -70,9 +69,15 @@ code {
 li {
   width: 100%;
   text-align: center;
-  border: 1px solid grey;
-  font-size: 2rem;
   margin: auto;
+}
+
+.inputRow-1 li,
+.inputRow-2 li,
+.inputRow-3 li,
+.inputRow-4 li,
+.inputRow-5 li {
+  border: 1px solid grey;
 }
 
 .orangeBG {
@@ -109,6 +114,7 @@ button:hover {
 
 .quote-container {
   padding: 10px;
+  font-size: 15px;
 }
 
 .show-quote {
@@ -117,4 +123,28 @@ button:hover {
   font-size: 15px;
   width: 100%;
   height: 50px;
+  padding-right: 5%;
+}
+
+.home-btn {
+  margin-left: -5%;
+}
+
+.navBar {
+  width: 100%;
+  margin: auto;
+  margin-top: -1%;
+  display: flex;
+  background-color: orange;
+}
+
+.navBar button {
+  font-size: 20px;
+  justify-self: center;
+  height: 50px;
+  background-color: orange;
+}
+
+.navBar button:hover {
+  background-color: orange;
 }
