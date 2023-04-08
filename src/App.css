@@ -4,7 +4,6 @@
 }
 
 body {
-  background-color: black;
   margin: 0;
   font-family:
     -apple-system,
@@ -20,6 +19,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(to right, rgb(224, 154, 154), yellow);
 }
 
 code {
@@ -109,7 +109,6 @@ button:hover {
 
 .quote-section {
   background-color: whitesmoke;
-  color: black;
 }
 
 .quote-container {
