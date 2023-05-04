@@ -32,6 +32,18 @@ code {
     monospace;
 }
 
+.calculator {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.calculator h1 {
+  width: 50%;
+  font-size: 20px;
+}
+
 .main {
   width: 80%;
   margin: auto;
@@ -112,8 +124,12 @@ button:hover {
 }
 
 .quote-container {
-  padding: 10px;
   font-size: 15px;
+  width: 80%;
+  margin: auto;
+  margin-top: 10%;
+  border: 0.5px solid purple;
+  padding: 5%;
 }
 
 .show-quote {
