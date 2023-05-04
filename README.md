@@ -27,8 +27,8 @@
 # 📖 Math magicians <a name="about-project"></a>
 
 **Math magicians** is a website for all fans of mathematics. It is a Single Page App (SPA) built with react that allows users to:
+- Navigate through 3 pages. A home page, a calculator page, and a quote page.
 - Make simple calculations.
-- Read a random math-related quote.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -55,7 +55,8 @@
 ### Key Features <a name="key-features"></a>
 
 - Make simple calculations.
-- Quotes API
+- Quotes API.
+- Page navigation.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
