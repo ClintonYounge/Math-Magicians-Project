@@ -1,44 +1,58 @@
-// src/components/QuoteData.js
-
-import { useState, useEffect } from 'react';
-import '../App.css';
+import React, { useState, useEffect } from 'react';
 
 function Quote() {
-  const [data, setData] = useState([]);
-  const [hasError, setHasError] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
+  const [quotes, setQuotes] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    const category = 'happiness';
-    const url = `https://api.api-ninjas.com/v1/quotes?category=${category}`;
-    setIsLoading(true);
-
-    fetch(url, {
-      method: 'GET',
-      headers: {
-        'X-Api-Key': 'PkqVAH5d4n204SaOGxDg5g==du09bh3RLTEmWABS',
-        'Content-Type': 'application/json',
-      },
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        setData(data[0]);
+    const category = 'success';
+    const fetchData = async () => {
+      try {
+        setIsLoading(true);
+        const res = await fetch(`https://api.api-ninjas.com/v1/quotes?category=${category}`, {
+          headers: {
+            'X-Api-Key': 'PkqVAH5d4n204SaOGxDg5g==du09bh3RLTEmWABS',
+          },
+        });
+        const data = await res.json();
+        setQuotes(data);
+      } catch (error) {
+        setError(error);
+      } finally {
         setIsLoading(false);
-      })
-      .catch(() => {
-        setHasError(true);
-        setIsLoading(false);
-      });
-  }, [setData]);
+      }
+    };
+    fetchData();
+  }, []);
 
-  if (hasError) return <div>Something went wrong!</div>;
-  if (isLoading) return <div>Loading Quote...</div>;
+  if (isLoading) {
+    return <div className="loading" data-testid="quote">Loading...</div>;
+  }
 
+  if (error) {
+    return (
+      <div data-testid="quote">
+        Error:
+        {error.message}
+      </div>
+    );
+  }
+
+  // Show each quote returned by the API in a div with class "quotes"
   return (
-    <div className="quote-container">
-      <p>{data.quote}</p>
-      <p>{`By: ${data.author}`}</p>
-    </div>
+    <ul>
+      {quotes.map((quote) => (
+        <div key={quote.id} className="quotes" data-testid="quote">
+          <p>
+            {quote.quote}
+            <br />
+            -
+            {quote.author}
+          </p>
+        </div>
+      ))}
+    </ul>
   );
 }
 
