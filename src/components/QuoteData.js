@@ -1,3 +1,5 @@
+// src/components/QuoteData.js
+
 import { useState, useEffect } from 'react';
 import '../App.css';
 

@@ -1,5 +1,6 @@
+// src/components/calculator.js
+
 import React, { useState } from 'react';
-import '../App.css';
 import Display from './Display';
 import Button from './Button';
 import calculate from '../logic/calculate';
@@ -15,7 +16,7 @@ function Calculate() {
     <div className="calculator">
       <h1>Lets do some math</h1>
       <div className="main">
-        <div className="show-calculations"><Display value={state.next || state.total || '0'} /></div>
+        <div id="show-calculations" data-testid="outputResult"><Display value={state.next || state.total || '0'} /></div>
         <div className="input-rows">
           <ul className="inputRow-1">
             <li><Button clickHandler={handleClick} name="AC" /></li>
