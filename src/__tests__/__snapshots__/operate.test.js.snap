@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test operate Module a number by 0: 2 1`] = `"2"`;
+
+exports[`test operate Module a number by 0: Can't find modulo as can't divide by 0. 1`] = `"Can't find modulo as can't divide by 0."`;
+
+exports[`test operate divide a number by 0: Can't divide by 0. 1`] = `"Can't divide by 0."`;
+
+exports[`test operate divide two numbers: 5 1`] = `"5"`;
+
+exports[`test operate plus two numbers: 18 1`] = `"18"`;
+
+exports[`test operate subtract numbers: 6 1`] = `"6"`;
+
+exports[`test operate times two numbers: 21 1`] = `"21"`;

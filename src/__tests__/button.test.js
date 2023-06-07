@@ -3,11 +3,17 @@ import { render, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import Button from '../components/Button';
 
-test('renders button with correct name', () => {
+it('renders button with correct name', () => {
   const buttonName = 'AC';
-  const { getByText } = render(<Button name={buttonName} clickHandler={() => {}} />);
+  const { getByText } = render(<Button name={buttonName} clickHandler={() => { }} />);
   const button = getByText(buttonName);
-  expect(button).toBeInTheDocument();
+  expect(button).toMatchSnapshot(`
+<button
+  type="button"
+>
+  AC
+</button>
+`);
 });
 
 test('calls click handler when button is clicked', () => {
