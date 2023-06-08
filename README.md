@@ -1,9 +1,5 @@
 <a name="readme-top"></a>
 
-<div align="center">
-  <h3><b>Restaraunt Meal (JS Capstone Group Project)</b></h3>
-</div>
-
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -103,6 +99,13 @@ Run the `npx jest` command in your console to run the tests.
 - GitHub: [@ClintonYounge](https://github.com/ClintonYounge)
 - Linkedin: [@clinton-younge](https://www.linkedin.com/in/clinton-younge-83386a25a/)
 - Twitter: [@YoungeCjay](https://twitter.com/YoungeCjay)
+
+👤 **Ruben Cuervo**
+
+- GitHub: [@Jrmcuervom](https://github.com/Jrmcuervo)
+- Twitter: [@Jrmcuervom](https://twitter.com/Jrcuervom)
+- LinkedIn: [Jrmcuervom](https://www.linkedin.com/in/jrmcuervom)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

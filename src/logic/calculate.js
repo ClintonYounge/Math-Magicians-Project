@@ -1,3 +1,5 @@
+// src/logic/calculate.js
+
 import operate from './operate';
 
 function isNumber(item) {

@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`calculate should return an object with total: 0, next: null, and operation: null when buttonName is AC: 
+Object {
+  "next": null,
+  "operation": null,
+  "total": null,
+}
+ 1`] = `
+Object {
+  "next": null,
+  "operation": null,
+  "total": null,
+}
+`;
+
+exports[`calculate should return an object with updated next value when buttonName is +/-: 
+Object {
+  "next": "-50",
+  "operation": "+",
+  "total": 100,
+}
+ 1`] = `
+Object {
+  "next": "-50",
+  "operation": "+",
+  "total": 100,
+}
+`;
+
+exports[`calculate should return an object with updated next value when buttonName is .: 
+Object {
+  "next": "50.",
+  "operation": "+",
+  "total": 100,
+}
+ 1`] = `
+Object {
+  "next": "50.",
+  "operation": "+",
+  "total": 100,
+}
+`;
+
+exports[`calculate should return an object with updated next value when buttonName is a number: 
+Object {
+  "next": "502",
+  "operation": "+",
+  "total": 100,
+}
+ 1`] = `
+Object {
+  "next": "502",
+  "operation": "+",
+  "total": 100,
+}
+`;

@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calculator interaction updates outputResult when buttons 2 x 4 and = are clicked 1`] = `
+<div
+  data-testid="outputResult"
+  id="show-calculations"
+>
+  <div
+    class="component-display"
+  >
+    <div>
+      8
+    </div>
+  </div>
+</div>
+`;

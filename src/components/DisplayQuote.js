@@ -1,3 +1,5 @@
+// src/components/DisplayQuote.js
+
 import QuoteData from './QuoteData';
 import '../App.css';
 
