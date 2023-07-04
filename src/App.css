@@ -32,6 +32,11 @@ code {
     monospace;
 }
 
+.welcome {
+  width: 90%;
+  margin: auto;
+}
+
 .calculator {
   width: 90%;
   margin: auto;

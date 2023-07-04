@@ -2,6 +2,7 @@
 
 exports[`Calculator interaction updates outputResult when buttons 2 x 4 and = are clicked 1`] = `
 <div
+  class="show-calculations"
   data-testid="outputResult"
   id="show-calculations"
 >

@@ -4,6 +4,7 @@ import Calculate from './components/calculator';
 import DisplayQuote from './components/DisplayQuote';
 import Home from './components/Home';
 import NavBar from './NavBar';
+import './App.css';
 
 function App() {
   return (

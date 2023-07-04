@@ -16,7 +16,7 @@ function Calculate() {
     <div className="calculator">
       <h1>Lets do some math</h1>
       <div className="main">
-        <div id="show-calculations" data-testid="outputResult"><Display value={state.next || state.total || '0'} /></div>
+        <div className="show-calculations" id="show-calculations" data-testid="outputResult"><Display value={state.next || state.total || '0'} /></div>
         <div className="input-rows">
           <ul className="inputRow-1">
             <li><Button clickHandler={handleClick} name="AC" /></li>
