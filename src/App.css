@@ -124,26 +124,13 @@ button:hover {
   background-color: orange;
 }
 
-.quote-section {
-  background-color: whitesmoke;
-}
-
-.quote-container {
+.quotes {
   font-size: 15px;
   width: 80%;
   margin: auto;
   margin-top: 10%;
   border: 0.5px solid purple;
   padding: 5%;
-}
-
-.show-quote {
-  background-color: rgb(248, 174, 37);
-  font-weight: 600;
-  font-size: 15px;
-  width: 100%;
-  height: 50px;
-  padding-right: 5%;
 }
 
 .home-btn {

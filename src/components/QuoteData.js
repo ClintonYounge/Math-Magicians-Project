@@ -39,7 +39,6 @@ function Quote() {
     );
   }
 
-  // Show each quote returned by the API in a div with class "quotes"
   return (
     <ul>
       {quotes.map((quote) => (
